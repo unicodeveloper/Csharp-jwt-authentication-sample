@@ -1,6 +1,6 @@
 # Csharp JWT Authentication sample
 
-This is a Csharp Web API that supports username and password authentication with JWTs and has APIs that return user information.
+This is a Csharp Web API that supports username and password authentication with JWTs and has APIs that return user information to the GUI client and vice-versa.
 
 ## Available APIs
 
