@@ -2,6 +2,10 @@
 
 This is a Csharp Web API that supports username and password authentication with JWTs and has APIs that return user information to the GUI client and vice-versa.
 
+Everything about the Csharp WEB API runs from the `Api` Directory.
+
+The Desktop C# app runs from the `WpfClient` Directory.
+
 ## Available APIs
 
 ### User APIs
