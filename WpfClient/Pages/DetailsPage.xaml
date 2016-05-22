@@ -1,0 +1,39 @@
+﻿<Page x:Name="detailsPage" x:Class="WpfClient.Pages.DetailsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfClient.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="455" d:DesignWidth="640"
+      Title="DetailsPage" Loaded="detailsPage_Loaded">
+
+    <Grid>
+        <StackPanel Margin="0" VerticalAlignment="Center">
+            <TextBlock x:Name="tbkWelcome" Text="Welcome" HorizontalAlignment="Center" FontSize="36" />
+            <Grid HorizontalAlignment="Center" Width="200">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                
+                <TextBlock Text="Firstname:" Grid.Row="0" Grid.Column="0" />
+                <TextBlock Text="Middlename:" Grid.Row="1" Grid.Column="0" />
+                <TextBlock Text="Lastname:" Grid.Row="2" Grid.Column="0" />
+                <TextBlock Text="Age:" Grid.Row="3" Grid.Column="0" />
+
+                <TextBlock x:Name="tbkFname" Text="Firstname" Grid.Row="0" Grid.Column="1" />
+                <TextBlock x:Name="tbkMname" Text="Middlename" Grid.Row="1" Grid.Column="1" />
+                <TextBlock x:Name="tbkLname" Text="Lastname" Grid.Row="2" Grid.Column="1" />
+                <TextBlock x:Name="tbkAge" Text="Age" Grid.Row="3" Grid.Column="1" />
+            </Grid>
+            <Button x:Name="btnLogout" Content="Logout" Width="100" Click="btnLogout_Click" Margin="0,10,0,0" />
+        </StackPanel>
+    </Grid>
+</Page>

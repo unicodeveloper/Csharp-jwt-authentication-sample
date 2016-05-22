@@ -1,0 +1,30 @@
+﻿<Page x:Class="WpfClient.Pages.RegistrationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfClient.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="RegistrationPage">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Width="300">
+            <TextBlock Text="Create Account" HorizontalAlignment="Center" FontSize="36" />
+            <TextBlock Text="Username:" Margin="0,5,0,0" />
+            <TextBox x:Name="tbxUsername" Padding="5" />
+            <TextBlock Text="Password:" Margin="0,5,0,0" />
+            <PasswordBox x:Name="pbxPassword" Padding="5" />
+            <TextBlock Text="Firstname:" Margin="0,5,0,0" />
+            <TextBox x:Name="tbxFirstname" Padding="5" />
+            <TextBlock Text="Middlename:" Margin="0,5,0,0" />
+            <TextBox x:Name="tbxMiddlename" Padding="5" />
+            <TextBlock Text="Lastname:" Margin="0,5,0,0" />
+            <TextBox x:Name="tbxLastname" Padding="5" />
+            <TextBlock Text="Age:" Margin="0,5,0,0" />
+            <TextBox x:Name="tbxAge" Padding="5" />
+            <Button x:Name="btnReg" Content="REGISTER" Padding="5" Margin="0,5,0,0" Click="btnReg_Click" />
+            <Button x:Name="btnBack" Content="BACK" Padding="5" Margin="0,5,0,0" Click="btnBack_Click" />
+        </StackPanel>
+    </Grid>
+</Page>
