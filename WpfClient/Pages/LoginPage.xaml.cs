@@ -28,6 +28,11 @@ namespace WpfClient.Pages
             InitializeComponent();
         }
 
+        /**
+         * Login Method to handle Login Button
+         * @param  object sender
+         * @param  RoutedEventArgs e
+         */
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
             string username = tbxUsername.Text;
@@ -46,6 +51,11 @@ namespace WpfClient.Pages
             NavigationService.Navigate(new DetailsPage());
         }
 
+        /**
+         * Method to direct user to Register Page
+         * @param object sender
+         * @param RoutedEventArgs e
+         */
         private void btnRegister_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new RegistrationPage());

@@ -12,12 +12,21 @@ namespace WpfClient.Operations
 {
     class ApiOperations
     {
+        /**
+         * Base Url @string
+         */
         private string baseUrl;
+
         public ApiOperations()
         {
             this.baseUrl = "http://localhost:5000/api";
         }
 
+        /**
+         * Authenticate user with Web Api Endpoint
+         * @param string username
+         * @param string password
+         */
         public User AuthenticateUser(string username, string password)
         {
             string endpoint = this.baseUrl + "/users/login";
@@ -41,6 +50,10 @@ namespace WpfClient.Operations
             }
         }
 
+        /**
+         * Get User Details from Web Api
+         * @param  User Model
+         */
         public User GetUserDetails(User user)
         {
             string endpoint = this.baseUrl + "/users/" + user.Id;
@@ -62,7 +75,16 @@ namespace WpfClient.Operations
             }
         }
 
-        public User RegisterUser(string username, string password, string firstname, 
+        /**
+         * Register User
+         * @param  string username
+         * @param  string password
+         * @param  string firstname
+         * @param  string lastname
+         * @param  string middlename
+         * @param  int    age
+         */
+        public User RegisterUser(string username, string password, string firstname,
             string lastname, string middlename, int age)
         {
             string endpoint = this.baseUrl + "/users";

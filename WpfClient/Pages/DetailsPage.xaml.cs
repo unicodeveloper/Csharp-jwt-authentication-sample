@@ -28,12 +28,20 @@ namespace WpfClient.Pages
             InitializeComponent();
         }
 
+        /**
+         * Details Page Loaded
+         * @param  object  sender
+         * @param  RoutedEventArgs e
+         */
         private void detailsPage_Loaded(object sender, RoutedEventArgs e)
         {
             FetchUserDetails();
             ShowUserInfo();
         }
 
+        /**
+         * Fetch User Details
+         */
         private void FetchUserDetails()
         {
             ApiOperations ops = new ApiOperations();
@@ -48,6 +56,9 @@ namespace WpfClient.Pages
             Globals.LoggedInUser = user;
         }
 
+        /**
+         * Show User Info on the Screen
+         */
         private void ShowUserInfo()
         {
             tbkWelcome.Text += " " + Globals.LoggedInUser.Username;
@@ -57,6 +68,11 @@ namespace WpfClient.Pages
             tbkAge.Text = Globals.LoggedInUser.Age.ToString();
         }
 
+        /**
+         * Logout Method to be called on the logout Button
+         * @param  object sender
+         * @param  RoutedEventArgs e
+         */
         private void btnLogout_Click(object sender, RoutedEventArgs e)
         {
             Globals.LoggedInUser = null;

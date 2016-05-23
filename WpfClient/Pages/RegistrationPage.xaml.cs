@@ -28,6 +28,11 @@ namespace WpfClient.Pages
             InitializeComponent();
         }
 
+        /**
+         * Register method to handle the Rgister Button
+         * @param object sender
+         * @param RoutedEventArgs e
+         */
         private void btnReg_Click(object sender, RoutedEventArgs e)
         {
             string username = tbxUsername.Text;
@@ -50,6 +55,11 @@ namespace WpfClient.Pages
             NavigationService.Navigate(new DetailsPage());
         }
 
+        /**
+         * Method to handle going back to the previous screen
+         * @param object  sender
+         * @param RoutedEventArgs e
+         */
         private void btnBack_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.GoBack();
