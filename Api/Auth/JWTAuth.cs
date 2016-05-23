@@ -12,8 +12,8 @@ namespace Api.Auth
     public class JWTAuth
     {
         // I know I know this shouldn't be visible
-        // it's a sample cut me some slack :)
-        private static string secret = "SomeRandomString";
+        // it's a sample cut me some slack 😊😊😋😋
+        private static string secret = "Auth0 rocks!";
 
         public static string GenerateToken(User user)
         {
